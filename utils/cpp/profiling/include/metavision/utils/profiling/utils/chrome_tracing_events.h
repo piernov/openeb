@@ -9,6 +9,8 @@
 #ifndef METAVISION_UTILS_PROFILING_CHROME_TRACING_EVENTS_H
 #define METAVISION_UTILS_PROFILING_CHROME_TRACING_EVENTS_H
 
+#include <cstdint>
+
 #include "metavision/utils/profiling/utils/chrome_tracing_constants.h"
 
 namespace Profiling {

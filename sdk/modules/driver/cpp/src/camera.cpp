@@ -151,7 +151,7 @@ void Camera::Private::open_raw_file(const std::string &rawfile, const Future::Ra
         throw CameraException(CameraErrorCode::NotARegularFile);
     }
 
-    if (boost::filesystem::extension(rawfile) != ".raw") {
+    if (boost::filesystem::path(rawfile).extension().string() != ".raw") {
         throw CameraException(CameraErrorCode::WrongExtension,
                               "Expected .raw as extension for the provided input file " + rawfile + ".");
     }
@@ -346,7 +346,7 @@ void Camera::Private::start_recording(const std::string &rawfile_path) {
     check_events_stream_instance();
 
     stop_recording();
-    std::string base_path = boost::filesystem::change_extension(rawfile_path, "").string();
+    std::string base_path = boost::filesystem::path(rawfile_path).replace_extension("").string();
 
     // Log biases
     if (biases_) {

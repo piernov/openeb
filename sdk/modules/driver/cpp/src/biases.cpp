@@ -30,7 +30,7 @@ Biases::~Biases() {}
 
 void Biases::set_from_file(const std::string &biases_filename) {
     // Check extension
-    const auto extension = boost::filesystem::extension(biases_filename);
+    const auto extension = boost::filesystem::path(biases_filename).extension().string();
     if (extension != ".bias") {
         throw CameraException(CameraErrorCode::WrongExtension,
                               "For bias file '" + biases_filename +
@@ -99,7 +99,7 @@ void Biases::set_from_file(const std::string &biases_filename) {
 }
 
 void Biases::save_to_file(const std::string &dest_file) const {
-    const auto extension = boost::filesystem::extension(dest_file);
+    const auto extension = boost::filesystem::path(dest_file).extension().string();
     if (extension != ".bias") {
         throw CameraException(CameraErrorCode::WrongExtension,
                               "For bias file '" + dest_file +

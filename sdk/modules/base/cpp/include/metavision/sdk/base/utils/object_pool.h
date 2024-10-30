@@ -16,6 +16,7 @@
 #include <stack>
 #include <memory>
 #include <mutex>
+#include <stdexcept>
 #include <type_traits>
 #include <exception>
 
