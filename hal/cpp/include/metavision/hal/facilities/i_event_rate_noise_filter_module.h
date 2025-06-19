@@ -12,6 +12,7 @@
 #ifndef METAVISION_HAL_I_EVENT_RATE_NOISE_FILTER_MODULE_H
 #define METAVISION_HAL_I_EVENT_RATE_NOISE_FILTER_MODULE_H
 
+#include <cstdint>
 #include <string>
 
 #include "metavision/hal/facilities/i_registrable_facility.h"

@@ -12,6 +12,7 @@
 #ifndef METAVISION_HAL_IMX636_BIASES_H
 #define METAVISION_HAL_IMX636_BIASES_H
 
+#include <cstdint>
 #include <string>
 #include <map>
 

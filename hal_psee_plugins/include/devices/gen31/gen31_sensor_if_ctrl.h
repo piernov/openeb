@@ -12,6 +12,7 @@
 #ifndef METAVISION_HAL_GEN31_SENSOR_IF_CONTROL_H
 #define METAVISION_HAL_GEN31_SENSOR_IF_CONTROL_H
 
+#include <cstdint>
 #include <string>
 #include <memory>
 

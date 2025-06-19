@@ -12,6 +12,7 @@
 #ifndef METAVISION_HAL_I_HW_IDENTIFICATION_H
 #define METAVISION_HAL_I_HW_IDENTIFICATION_H
 
+#include <cstdint>
 #include <string>
 #include <vector>
 #include <map>

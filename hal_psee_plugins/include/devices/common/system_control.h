@@ -12,6 +12,7 @@
 #ifndef METAVISION_HAL_SYSTEM_CONTROL_H
 #define METAVISION_HAL_SYSTEM_CONTROL_H
 
+#include <cstdint>
 #include <string>
 #include <memory>
 
