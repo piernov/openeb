@@ -9,7 +9,7 @@
 
 set (PACKAGE_LICENSE "License: Copyright (c) Prophesee S.A. - All Rights Reserved")
 set (OPEN_PACKAGE_LICENSE "License : Copyright (c) Prophesee S.A.")
-set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Metavision SDK")
 
 set(CPACK_PACKAGE_VENDOR "Prophesee")
 
