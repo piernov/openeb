@@ -21,7 +21,7 @@ if((NOT WIN32) AND (NOT APPLE) AND (NOT ANDROID))
         )
         if(UDEV_RULES_SYSTEM_INSTALL) 
             install(FILES ${rule}
-                    DESTINATION /etc/udev/rules.d
+                    DESTINATION etc/udev/rules.d
                     COMPONENT metavision-hal-prophesee-plugins
             )
     endif()
