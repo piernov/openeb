@@ -8,7 +8,7 @@
 # See the License for the specific language governing permissions and limitations under the License.
 
 # Boost::filesystem
-find_package(Boost REQUIRED COMPONENTS filesystem system)
+find_package(Boost REQUIRED COMPONENTS filesystem)
 
 # Create shared library for internal profiling tools:
 add_library(metavision_utils_profiling STATIC)
@@ -19,7 +19,7 @@ target_include_directories(metavision_utils_profiling
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../include>
 )
 
-target_link_libraries(metavision_utils_profiling PUBLIC Boost::filesystem Boost::system)
+target_link_libraries(metavision_utils_profiling PUBLIC Boost::filesystem)
 
 install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../include/"
         DESTINATION include
