@@ -10,7 +10,7 @@
 project(metavision_hal_sample_plugin)
 cmake_minimum_required(VERSION 3.5)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 if (MSVC)
     set(CMAKE_DEBUG_POSTFIX "_d")
 endif(MSVC)
