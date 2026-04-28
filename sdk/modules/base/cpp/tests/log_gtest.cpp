@@ -13,6 +13,7 @@
 #include <ctime>
 #include <cstdlib>
 #include <fstream>
+#include <iomanip>
 #include <iterator>
 #include <gtest/gtest.h>
 #include <type_traits>
